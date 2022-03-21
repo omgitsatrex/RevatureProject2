@@ -7,6 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SeeAllListingsComponent implements OnInit {
 
+  listings: any[] = [
+    {
+      "imgThumbnail": "https://www.nps.gov/apco/learn/historyculture/images/Peers-House.jpg",
+      "description": "description goes here"
+    }
+  ]
+
   constructor() { }
 
   ngOnInit(): void {
