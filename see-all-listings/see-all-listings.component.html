@@ -12,39 +12,54 @@
             <a class="dropdown-item" href="#">Something else here</a>
         </div>
     </div>
-    
+
     <input type="text" class="form-control" aria-label="Sizing example input"
         aria-describedby="inputGroup-sizing-default" placeholder="Enter your search here">
     <!-- <div class="input-group-prepend">
         <span class="input-group-text" id="inputGroup-sizing-default">Default</span>
     </div> -->
     <button type="button" class="btn btn-primary">Search</button>
-    
-    
-    
+
+
+
 </div>
 
 <hr>
 
 <ul class="list-group">
-    <li class="list-group-item"><span ><img src="https://www.nps.gov/apco/learn/historyculture/images/Peers-House.jpg" alt="house" style="width: 100px; height: 100px"/> Description</span></li>
-    <li class="list-group-item"><div class="row">
-        <div class="col-lg-2">
-            <img src="https://www.nps.gov/apco/learn/historyculture/images/Peers-House.jpg" alt="house" style="width: 100px; height: 100px"/>
+    <!-- <li class="list-group-item"><span><img src="https://www.nps.gov/apco/learn/historyculture/images/Peers-House.jpg"
+                alt="house" style="width: 100px; height: 100px" /> Description</span></li>
+    <li class="list-group-item">
+        <div class="row">
+            <div class="col-lg-2">
+                <img src="https://www.nps.gov/apco/learn/historyculture/images/Peers-House.jpg" alt="house"
+                    style="width: 100px; height: 100px" />
+            </div>
+            <div class="col-lg-10">
+                Description
+            </div>
         </div>
-        <div class="col-lg-10">
-            Description
-        </div>
-    </div></li>
+    </li>
     <li class="list-group-item">A fourth item</li>
     <li class="list-group-item">And a fifth one</li>
-    <li class="list-group-item"><div class="row">
-        <div class="col-lg-2">
-            <img src="{{listings[0].imgThumbnail}}" alt="house" style="width: 100px; height: 100px"/>
+    <li class="list-group-item">
+        <div class="row">
+            <div class="col-lg-2">
+                <img src="{{listings[0].imgThumbnail}}" alt="house" style="width: 100px; height: 100px" />
+            </div>
+            <div class="col-lg-10">
+                {{listings[0].description}}
+            </div>
         </div>
-        <div class="col-lg-10">
-            Description
+    </li> -->
+    <li class="list-group-item" *ngFor="let listing of listings">
+        <div class="row">
+            <div class="col-lg-2">
+                <img src="{{listing.imgThumbnail}}" alt="house" style="width: 100px; height: 100px" />
+            </div>
+            <div class="col-lg-10">
+                {{listing.description}}
+            </div>
         </div>
-    </div></li>
-  </ul>
-
+    </li>
+</ul>
