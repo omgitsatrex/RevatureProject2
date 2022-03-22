@@ -1,16 +1,34 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
-import { AppRoutingModule } from './app-routing.module';
+
 import { AppComponent } from './app.component';
+import { LoginComponent } from './components/login/login.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
+import { IndexComponent } from './components/index/index.component';
+import { HomeComponent } from './components/home/home.component';
+import { SidebarComponent } from './components/sidebar/sidebar.component';
+import { BuyerPageComponent } from './components/buyer-page/buyer-page.component';
+import { HeaderComponent } from './components/header/header.component';
+import { SeeAllListingsComponent } from './components/see-all-listings/see-all-listings.component';
+
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    LoginComponent,
+    NavbarComponent,
+    IndexComponent,
+    HomeComponent,
+    SidebarComponent,
+    BuyerPageComponent,
+    HeaderComponent,
+    SeeAllListingsComponent
+   
+    
   ],
   imports: [
-    BrowserModule,
-    AppRoutingModule
+    BrowserModule
   ],
   providers: [],
   bootstrap: [AppComponent]
