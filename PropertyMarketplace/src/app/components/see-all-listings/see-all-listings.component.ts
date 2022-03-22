@@ -27,4 +27,8 @@ export class SeeAllListingsComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  clickSearch(): void {
+    console.log("button clicked");
+  }
+
 }

@@ -11,6 +11,7 @@ import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { BuyerPageComponent } from './components/buyer-page/buyer-page.component';
 import { HeaderComponent } from './components/header/header.component';
 import { SeeAllListingsComponent } from './components/see-all-listings/see-all-listings.component';
+import { TestComponent } from './components/test/test.component';
 
 
 @NgModule({
@@ -23,7 +24,8 @@ import { SeeAllListingsComponent } from './components/see-all-listings/see-all-l
     SidebarComponent,
     BuyerPageComponent,
     HeaderComponent,
-    SeeAllListingsComponent
+    SeeAllListingsComponent,
+    TestComponent
    
     
   ],
